@@ -1,16 +1,115 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container mt-5">
+    <!-- Heading -->
+    <div class="block-heading text-center mb-4">
+      <h2 class="text-primary">Shopping cart</h2>
+      <p class="text-muted">
+        The customer is very important, the customer will be followed by the customer. 
+        Now, as an urn, I have no right to be in possession of property.
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- Left Side - Products -->
+      <div class="col-lg-8">
+        <!-- Product Block -->
+        <div class="product p-3 border-bottom">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4HjzgZvDM9BwKglTpOfLYNXykHj7-mmNlXQ&s" alt="Product">
+            </div>
+            <div class="col-5">
+              <h6 class="text-primary">I am very sorry</h6>
+              <p class="mb-0 small">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+            </div>
+            <div class="col-2">
+              <label>Quantity:</label>
+              <input type="number" class="form-control" value="0">
+            </div>
+            <div class="col-2 text-end">
+              <h5>$120</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="product p-3 border-bottom">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4HjzgZvDM9BwKglTpOfLYNXykHj7-mmNlXQ&s" alt="Product">
+            </div>
+            <div class="col-5">
+              <h6 class="text-primary">I am very sorry</h6>
+              <p class="mb-0 small">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+            </div>
+            <div class="col-2">
+              <label>Quantity:</label>
+              <input type="number" class="form-control" value="1">
+            </div>
+            <div class="col-2 text-end">
+              <h5>$120</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="product p-3">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4HjzgZvDM9BwKglTpOfLYNXykHj7-mmNlXQ&s" alt="Product">
+            </div>
+            <div class="col-5">
+              <h6 class="text-primary">I am very sorry</h6>
+              <p class="mb-0 small">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+            </div>
+            <div class="col-2">
+              <label>Quantity:</label>
+              <input type="number" class="form-control" value="1">
+            </div>
+            <div class="col-2 text-end">
+              <h5>$120</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Summary -->
+      <div class="col-lg-4">
+        <div class="summary p-4">
+          <h5 class="mb-3">Summary</h5>
+          <div class="d-flex justify-content-between border-bottom pb-2">
+            <span>Subtotal</span>
+            <span>$360</span>
+          </div>
+          <div class="d-flex justify-content-between border-bottom py-2">
+            <span>Discount</span>
+            <span>$0</span>
+          </div>
+          <div class="d-flex justify-content-between border-bottom py-2">
+            <span>Shipping</span>
+            <span>$0</span>
+          </div>
+          <div class="d-flex justify-content-between border-bottom py-2 fw-bold">
+            <span>Total</span>
+            <span>$360</span>
+          </div>
+          <button class="btn btn-primary w-100 mt-3">checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
-
 </html>

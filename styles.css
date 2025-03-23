@@ -1,1 +1,20 @@
-/*  your css code here. If applicable */
+/* Headings */
+.block-heading h2 {
+  color: #3b99e0;
+}
+
+/* Summary block styling */
+.summary {
+  background-color: #f7fbff;
+  border-top: 3px solid #5ea4f3;
+  border-radius: 4px;
+}
+
+.summary h5 {
+  font-weight: bold;
+}
+
+.summary .btn {
+  background-color: #3b99e0;
+  border: none;
+}
